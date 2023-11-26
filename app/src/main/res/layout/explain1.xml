@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/checkbox1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용 설명"
+            android:fontFamily="@font/windsongr"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rectangle_layout"
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_3rightangle"
+        android:orientation="vertical"
+        android:gravity="center">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- 첫 번째 화면 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="405dp"
+                        android:layout_height="400dp"
+                        android:text="설명화면 1"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!-- 두 번째 화면 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="405dp"
+                        android:layout_height="400dp"
+                        android:text="설명화면 2"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <!-- 세 번째 화면 -->
+                <LinearLayout
+                    android:layout_width="405dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="405dp"
+                        android:layout_height="400dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="405dp"
+                            android:layout_height="340dp"
+                            android:gravity="center"
+                            android:text="설명 화면3"
+                            android:textColor="@color/black" />
+                        <Button
+                            android:id="@+id/btn_start"
+                            android:layout_width="270dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/btn_shape2"
+                            android:text="시작하기"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/checkbox1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rectangle_layout"
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_3rightangle"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/windsong"
+                android:hint="이름을 입력하세요."
+                android:textColorHint="#D7252424"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="아이디" />
+
+            <EditText
+                android:id="@+id/ed_id"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/windsong"
+                android:hint="아이디를 입력하세요."
+                android:textColorHint="#D7252424"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="비밀번호" />
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/windsong"
+                android:hint="비밀번호를 입력하세요."
+                android:textColorHint="#D7252424"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="비밀번호 확인" />
+
+            <EditText
+                android:id="@+id/ed_confirmpassword"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/windsong"
+                android:hint="비밀번호 확인."
+                android:textColorHint="#D7252424"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_signup1"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/btn_shape2"
+            android:text="회원가입"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
